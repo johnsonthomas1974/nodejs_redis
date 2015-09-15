@@ -1,5 +1,5 @@
 # nodejs_redis
-Simple linking docker continer using link functionality. In this example nodejs container is linked to redis container. In real production enviroment, we should go with better service discovery rather docker linking. 
+Simple linking docker containers using docker link functionality; nodejs container is linked to redis container. In real production enviroment, we should go with better service discovery rather docker linking. 
 Here are the steps. 
 1) Run the redis : docker run -d -p 6379:6379 --name redis-server  redis
 2) Links the redis container with nodejs container :: docker run -d -p 80:8080 --link redis-server:rds --name ead ead
